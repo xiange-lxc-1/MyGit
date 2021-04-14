@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_feature_4;
 
     private Button btn_feature_11;
+    private Button btn_feature_12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         btn_feature_11 = (Button) findViewById(R.id.btn_feature_11);
+        btn_feature_12 = (Button) findViewById(R.id.btn_feature_12);
     }
 
     /**
@@ -73,5 +75,15 @@ public class MainActivity extends AppCompatActivity {
             btn_feature_11.setText("功能11");
         }
     }
+
+    public void feature12(View view) {
+        if(btn_feature_12.getText().toString().equals("功能12")){
+            btn_feature_12.setText("Hello World");
+        }
+        else{
+            btn_feature_12.setText("功能12");
+        }
+    }
+
 
 }
