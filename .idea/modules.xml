@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MyGit.iml" filepath="$PROJECT_DIR$/.idea/MyGit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyGit.iml" filepath="$PROJECT_DIR$/.idea/modules/MyGit.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MyGit.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MyGit.app.iml" />
     </modules>
   </component>
