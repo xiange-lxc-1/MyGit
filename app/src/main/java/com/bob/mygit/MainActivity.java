@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btn_feature_11;
     private Button btn_feature_12;
+
     private Button btn_feature_13;
     private Button btn_feature_14;
     private Button btn_feature_15;
@@ -109,13 +110,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     public void feature15(View view) {
-        if(btn_feature_15.getText().toString().equals("功能15")){
+        if(btn_feature_15.getText().toString().equals("功能22")){
             btn_feature_15.setText("Hello World");
         }
         else{
-            btn_feature_15.setText("功能15");
+            btn_feature_15.setText("功能22");
         }
     }
+
 }
