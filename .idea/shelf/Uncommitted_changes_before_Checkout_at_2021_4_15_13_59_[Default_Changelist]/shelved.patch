@@ -1,0 +1,50 @@
+Index: app/src/main/java/com/bob/mygit/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.bob.mygit;\r\n\r\nimport android.support.v7.app.AppCompatActivity;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\n\r\npublic class MainActivity extends AppCompatActivity {\r\n\r\n    private Button btn_feature_1;\r\n    private Button btn_feature_2;\r\n    private Button btn_feature_4;\r\n\r\n    private Button btn_feature_11;\r\n    private Button btn_feature_12;\r\n\r\n    private Button btn_feature_21;\r\n    private Button btn_feature_22;\r\n    private Button btn_feature_13;\r\n    private Button btn_feature_14;\r\n    private Button btn_feature_15;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n        btn_feature_1 = (Button) findViewById(R.id.btn_feature_1);\r\n        btn_feature_2 = (Button) findViewById(R.id.btn_feature_2);\r\n        btn_feature_4 = (Button) findViewById(R.id.btn_feature_4);\r\n\r\n        btn_feature_11 = (Button) findViewById(R.id.btn_feature_11);\r\n        btn_feature_12 = (Button) findViewById(R.id.btn_feature_12);\r\n        btn_feature_13 = (Button) findViewById(R.id.btn_feature_13);\r\n        btn_feature_14 = (Button) findViewById(R.id.btn_feature_14);\r\n        btn_feature_15 = (Button) findViewById(R.id.btn_feature_15);\r\n    }\r\n\r\n    /**\r\n     * feature-1\r\n     * display HelloWorld\r\n     * @param view\r\n     */\r\n    public void feature1(View view) {\r\n        if (btn_feature_1.getText().toString().equals(\"功能1\")) {\r\n            btn_feature_1.setText(R.string.feature_1_dis);\r\n        } else {\r\n            btn_feature_1.setText(R.string.feature_1);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * feature-2\r\n     * display HelloAndroid\r\n     * @param view\r\n     */\r\n    public void feature2(View view) {\r\n        if (btn_feature_2.getText().toString().equals(\"功能2\")) {\r\n            btn_feature_2.setText(R.string.feature_2_dis);\r\n        } else {\r\n            btn_feature_2.setText(R.string.feature_2);\r\n        }\r\n    }\r\n\r\n\r\n    /**\r\n     * feature-4\r\n     * display Hello\r\n     * @param view\r\n     */\r\n    public void feature4(View view) {\r\n        btn_feature_4.setText(R.string.feature_4_dis);\r\n    }\r\n\r\n    /**\r\n     * feature-11分支 新建\r\n     * @param view\r\n     */\r\n    public void feature11(View view) {\r\n        if(btn_feature_11.getText().toString().equals(\"功能11\")){\r\n            btn_feature_11.setText(\"Hello World\");\r\n        }\r\n        else{\r\n            btn_feature_11.setText(\"功能11\");\r\n        }\r\n    }\r\n\r\n    public void feature12(View view) {\r\n        if(btn_feature_12.getText().toString().equals(\"功能12\")){\r\n            btn_feature_12.setText(\"Hello World\");\r\n        }\r\n        else{\r\n            btn_feature_12.setText(\"功能12\");\r\n        }\r\n    }\r\n\r\n\r\n    public void feature13(View view) {\r\n        if(btn_feature_13.getText().toString().equals(\"功能13\")){\r\n            btn_feature_13.setText(\"Hello World\");\r\n        }\r\n        else{\r\n            btn_feature_13.setText(\"功能13\");\r\n        }\r\n    }\r\n\r\n    public void feature14(View view) {\r\n        if(btn_feature_14.getText().toString().equals(\"功能14\")){\r\n            btn_feature_14.setText(\"Hello World\");\r\n        }\r\n        else{\r\n            btn_feature_14.setText(\"功能14\");\r\n        }\r\n    }\r\n\r\n    public void feature22(View view) {\r\n        if(btn_feature_22.getText().toString().equals(\"功能22\")){\r\n            btn_feature_22.setText(\"Hello World\");\r\n        }\r\n        else{\r\n            btn_feature_22.setText(\"功能22\");\r\n        }\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/bob/mygit/MainActivity.java	(revision 0bec72a727a155f6d177eae3b404872da5e7d4b7)
++++ app/src/main/java/com/bob/mygit/MainActivity.java	(date 1618455107090)
+@@ -33,6 +33,9 @@
+         btn_feature_13 = (Button) findViewById(R.id.btn_feature_13);
+         btn_feature_14 = (Button) findViewById(R.id.btn_feature_14);
+         btn_feature_15 = (Button) findViewById(R.id.btn_feature_15);
++
++
++        btn_feature_22 = (Button) findViewById(R.id.btn_feature_22);
+     }
+ 
+     /**
+@@ -112,6 +115,15 @@
+         }
+     }
+ 
++    public void feature15(View view) {
++        if(btn_feature_15.getText().toString().equals("功能15")){
++            btn_feature_15.setText("Hello World");
++        }
++        else{
++            btn_feature_15.setText("功能15");
++        }
++    }
++
+     public void feature22(View view) {
+         if(btn_feature_22.getText().toString().equals("功能22")){
+             btn_feature_22.setText("Hello World");
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">My Git</string>\r\n    <string name=\"feature_1\">功能1</string>\r\n    <string name=\"feature_1_dis\">Hello World</string>\r\n    <string name=\"feature_2\">功能2</string>\r\n    <string name=\"feature_2_dis\">Hello Android</string>\r\n    <string name=\"feature_4\">功能4</string>\r\n    <string name=\"feature_4_dis\">Hello</string>\r\n    <string name=\"feature_11\">功能11</string>\r\n    <string name=\"feature_12\">功能12</string>\r\n    <string name=\"feature_13\">功能13</string>\r\n    <string name=\"feature_14\">功能14</string>\r\n    <string name=\"feature_15\">功能15</string>\r\n</resources>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision 0bec72a727a155f6d177eae3b404872da5e7d4b7)
++++ app/src/main/res/values/strings.xml	(date 1618455040707)
+@@ -11,4 +11,5 @@
+     <string name="feature_13">功能13</string>
+     <string name="feature_14">功能14</string>
+     <string name="feature_15">功能15</string>
++    <string name="feature_22">功能22</string>
+ </resources>
