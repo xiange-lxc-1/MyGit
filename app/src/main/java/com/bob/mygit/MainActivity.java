@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btn_feature_11;
     private Button btn_feature_12;
+    private Button btn_feature_13;
+    private Button btn_feature_14;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +24,10 @@ public class MainActivity extends AppCompatActivity {
         btn_feature_2 = (Button) findViewById(R.id.btn_feature_2);
         btn_feature_4 = (Button) findViewById(R.id.btn_feature_4);
 
-
         btn_feature_11 = (Button) findViewById(R.id.btn_feature_11);
         btn_feature_12 = (Button) findViewById(R.id.btn_feature_12);
+        btn_feature_13 = (Button) findViewById(R.id.btn_feature_13);
+        btn_feature_14 = (Button) findViewById(R.id.btn_feature_14);
     }
 
     /**
@@ -82,6 +85,25 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             btn_feature_12.setText("功能12");
+        }
+    }
+
+
+    public void feature13(View view) {
+        if(btn_feature_13.getText().toString().equals("功能13")){
+            btn_feature_13.setText("Hello World");
+        }
+        else{
+            btn_feature_13.setText("功能13");
+        }
+    }
+
+    public void feature14(View view) {
+        if(btn_feature_14.getText().toString().equals("功能14")){
+            btn_feature_14.setText("Hello World");
+        }
+        else{
+            btn_feature_14.setText("功能14");
         }
     }
 
