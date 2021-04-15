@@ -72,6 +72,13 @@
         android:text="@string/feature_15"
         android:onClick="feature15"
         />
+    <Button
+        android:id="@+id/btn_feature_22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_22"
+        android:onClick="feature22"
+        />
 
 
 
